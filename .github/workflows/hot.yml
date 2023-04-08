@@ -14,11 +14,12 @@ jobs:
         python-version: '3.10'
     - name: Add conda to system path
       run: |
-         ls
-         pwd
+         cd /home/runner/work/Hot/Hot
+         bash github.sh
          
-#     - name: push
-#       run: |
-#           git add . 
-#           git commit -m "github action push"
-#           git push -f 
+         
+    - name: push
+      run: |
+          git add . 
+          git commit -m "github action push"
+          git push -f 
