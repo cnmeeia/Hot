@@ -16,10 +16,12 @@ jobs:
         python-version: '3.10'
     - name: Add conda to system path
       run: |
-         bash github.py
+         ls
+         for file in $(find ./ -type f -name *.py)
          
-    - name: push
-      run: |
-          git add . 
-          git commit -m "github action push"
-          git push -f 
+         
+#     - name: push
+#       run: |
+#           git add . 
+#           git commit -m "github action push"
+#           git push -f 
