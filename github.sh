@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for file in $(find ./ -type f -name *.py)
+for file in $(find /home/runner/work/Hot/Hot/ -type f -name *.py)
 do
  python3 $file 
 done
