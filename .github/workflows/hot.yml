@@ -14,6 +14,7 @@ jobs:
         python-version: '3.10'
     - name: Add conda to system path
       run: |
+         apt-get install python3-pip
          cd /home/runner/work/Hot/Hot
          bash github.sh
          
