@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for file in $(find . -type f -name *.py)
+find . -type f -name "*.py" | xargs -I {} -P 4 bash -c 'python3 "{}"'{}
 do
  python3 $file 
 done
